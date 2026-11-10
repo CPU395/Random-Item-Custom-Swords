@@ -39,37 +39,34 @@ More weapons and features can be added in future updates.
 
 | Requirement | Details |
 |---|---|
-| Server | Paper |
-| Java | Required by your Paper version |
-| API | Paper API |
-| Dependencies | No additional runtime dependency, unless specified by a release |
+| Server/Client | Fabric |
+| Java | 25 version |
+| API | Fabric API |
+| Dependencies | Architectury API, Fzzy Config, Fabric API, Fabric Language Kotlin, Simply swords (updated), Simply Tooltips (updated) |
 
 ## 📥 Installation
 
-1. Download the latest plugin `.jar` file.
-2. Open your Minecraft server folder.
-3. Navigate to the `plugins` folder.
+1. Download the latest `.jar` file.
+2. Open your Minecraft server/Client's mod folder.
+3. Navigate to the `mods` folder.
 4. Place the downloaded `.jar` file inside it.
-5. Restart your Paper server.
-6. Configure the plugin if a configuration file is generated.
+5. Restart your Fabric server/client.
+6. You can configure it by such commands given as below
 
 ## 🎮 Commands
 
 | Command | Description |
 |---|---|
-| `/timer set <time>` | Set the random item timer |
-| `/randomitem stop` | Stop the random item system |
-| `/bar title <text>` | Change the boss bar title |
+**/randomitem interval <1–120>** — set the interval in seconds.
+**/randomitem simplychance <10|20|30|40|50|60|70|80|90|100>** — set the Simply Swords weapon chance.
+**/randomitem stop and /randomitem start** — stop or resume item drops.
+**/randomitem text <label>** — customize the timer label. Use %time% for the remaining seconds.
+**/randomitem color <color>** — change the boss-bar color.
+**/randomitem textcolor <color>** — change the timer and chat text color.
+**/randomitem announce <true|false>** — show or hide the item announcement in chat.
+**/randomitem status** — show the current settings.
 
 *Commands may vary depending on the installed release.*
-
-## 🏰 Loot Locations
-
-Explore different structures to discover random rewards:
-
-- End Cities
-- Mineshafts
-- Villages
 
 ## 🛠️ Development
 
@@ -77,24 +74,16 @@ Built using the Paper API.
 
 For development, add the Paper API dependency to your Maven project with `provided` scope.
 
-## 📸 Screenshots
-
-Add your in-game screenshots here:
-
-- Random item countdown
-- Custom swords
-- Random loot chests
-- Structure loot
-
 ## 🔄 Updates
 
 Check the GitHub Releases or Modrinth page for new features, improvements, and bug fixes.
+Wait you are in github.
 
 ## 💚 Credits
 
 - **Developer:** CPU395
 - **Project:** Random Item – Recreate
-- **Inspired by:** The original Random Item concept
+- **Inspired by:** The original Random Item and Simply Swords concept
 
 This is an independent recreation.
 
