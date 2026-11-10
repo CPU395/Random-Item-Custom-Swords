@@ -1,0 +1,7 @@
+.gradle/
+build/
+run/
+.idea/
+*.iml
+config/randomitem.json
+/RandomItem-2.0.0-fabric-26.3.jar

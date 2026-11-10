@@ -1,94 +1,52 @@
-# Random-Item-Custom-Swords-
+# Random Item Timer
 
-<p align="center">
-  <strong>A Minecraft Random Item Challenge Plugin</strong>
-</p>
+A server-side Fabric mod for Minecraft 26.3. It periodically gives every online player a random item from the game's active item registry, including items registered by compatible mods.
 
-<p align="center">
-  Recreated and developed by <strong>CPU395</strong>
-</p>
+## Features
 
----
+- Configurable random-item interval from 1 to 120 seconds (default: 30 seconds).
+- Optional Simply Swords weapon chance from 10% to 100%, in 10% increments.
+- In-game controls to stop and restart item drops.
+- Custom countdown label, boss-bar color, and text color.
+- Optional item announcement in chat.
+- Settings saved to `config/randomitem.json`.
 
-## 🌿 About
+## Commands
 
-**Random Item – Recreate** is a Minecraft Paper plugin inspired by the classic Random Item concept.
-
-Receive random items at configurable intervals, discover special loot, explore structures, and collect custom swords!
-
-Make your survival adventure unpredictable and exciting.
-
-## ✨ Features
-
-- 🎲 Random item generation
-- ⏱️ Configurable item timer
-- ⚔️ Custom swords with special abilities
-- 🎁 Random loot chest system
-- 🏰 Structure-based loot generation
-- 📊 Custom countdown boss bar
-- ⚙️ Configurable settings
-- 🚀 Lightweight Paper plugin
-
-## ⚔️ Custom Swords
-
-Discover special swords with unique designs and abilities.
-
-More weapons and features can be added in future updates.
-
-## 📦 Requirements
-
-| Requirement | Details |
-|---|---|
-| Server/Client | Fabric |
-| Java | 25 version |
-| API | Fabric API |
-| Dependencies | Architectury API, Fzzy Config, Fabric API, Fabric Language Kotlin, Simply swords (updated), Simply Tooltips (updated) |
-
-## 📥 Installation
-
-1. Download the latest `.jar` file.
-2. Open your Minecraft server/Client's mod folder.
-3. Navigate to the `mods` folder.
-4. Place the downloaded `.jar` file inside it.
-5. Restart your Fabric server/client.
-6. You can configure it by such commands given as below
-
-## 🎮 Commands
+These commands require operator/game-master permission:
 
 | Command | Description |
 |---|---|
-|**/randomitem interval <1–120>**| — set the interval in seconds.
-|**/randomitem simplychance <10,20,30,40,50,60,70,80,90,100>**| — set the Simply Swords weapon chance.
-|**/randomitem stop and /randomitem start**| — stop or resume item drops.
-|**/randomitem text <label>**| — customize the timer label. Use %time% for the remaining seconds.
-|**/randomitem color <color>**| — change the boss-bar color.
-|**/randomitem textcolor <color>**| — change the timer and chat text color.
-|**/randomitem announce <true,false>**| — show or hide the item announcement in chat.
-|**/randomitem status**| — show the current settings.
+| `/randomitem interval <1-120>` | Set the timer interval in seconds. |
+| `/randomitem simplychance <10-100>` | Set Simply Swords weapon chance; use multiples of 10. |
+| `/randomitem stop` | Stop random item drops. |
+| `/randomitem start` | Resume random item drops. |
+| `/randomitem text <label>` | Set the countdown label. Use `%time%` for seconds remaining. |
+| `/randomitem color <color>` | Set boss-bar color: pink, blue, red, green, yellow, purple, or white. |
+| `/randomitem textcolor <color>` | Set text color: white, yellow, gold, red, light_purple, aqua, green, blue, or gray. |
+| `/randomitem announce <true\|false>` | Enable or disable item-name chat announcements. |
+| `/randomitem status` | Show current settings. |
 
-*Commands may vary depending on the installed release.*
+## Dependencies
 
-## 🛠️ Development
+- Minecraft Java Edition 26.3
+- Java 25 or newer
+- Fabric Loader 0.19.5 or newer
+- Fabric API for Minecraft 26.3 (tested with `0.165.2+26.3`)
+- Optional: a Minecraft 26.3-compatible Simply Swords mod for Simply Swords weapons to be available in the random pool
 
-Built using the Paper API.
+The randomizer only selects items that are registered by the mods loaded in the active game. It does not port Simply Swords itself.
 
-For development, add the Paper API dependency to your Maven project with `provided` scope.
+## Install
 
-## 🔄 Updates
+1. Install Fabric Loader for Minecraft 26.3 and the required Fabric API.
+2. Put this mod JAR and any compatible content mods in the same profile's `mods` folder.
+3. Keep only one copy of each mod in that folder, then launch the Fabric 26.3 profile.
 
-Check the GitHub Releases or Modrinth page for new features, improvements, and bug fixes.
-Wait you are in github.
+## Build from source
 
-## 💚 Credits
+Open the repository folder in IntelliJ IDEA and import it as a Gradle project. Use Java 25. Run `gradlew build` (Windows: `gradlew.bat build`). The mod JAR is written to `build/libs/`.
 
-- **Developer:** CPU395
-- **Project:** Random Item – Recreate
-- **Inspired by:** The original Random Item and Simply Swords concept
+## License and credits
 
-This is an independent recreation.
-
----
-
-<p align="center">
-  Made with ❤️ by CPU395
-</p>
+Random Item Timer is an independent project. Simply Swords is an optional compatible mod and is not bundled with this project.

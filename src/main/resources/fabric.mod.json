@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "randomitem",
+  "version": "${version}",
+  "name": "Random Item Timer",
+  "description": "Gives players random registered items on a configurable timer, with Simply Swords chance controls.",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.randomitem.RandomItemMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
