@@ -1,7 +1,5 @@
 # Random-Item-Custom-Swords-
 
-# 🎲 Random Item – Recreate
-
 <p align="center">
   <strong>A Minecraft Random Item Challenge Plugin</strong>
 </p>
