@@ -57,14 +57,14 @@ More weapons and features can be added in future updates.
 
 | Command | Description |
 |---|---|
-**/randomitem interval <1–120>** — set the interval in seconds.
-**/randomitem simplychance <10|20|30|40|50|60|70|80|90|100>** — set the Simply Swords weapon chance.
-**/randomitem stop and /randomitem start** — stop or resume item drops.
-**/randomitem text <label>** — customize the timer label. Use %time% for the remaining seconds.
-**/randomitem color <color>** — change the boss-bar color.
-**/randomitem textcolor <color>** — change the timer and chat text color.
-**/randomitem announce <true|false>** — show or hide the item announcement in chat.
-**/randomitem status** — show the current settings.
+|**/randomitem interval <1–120>**| — set the interval in seconds.
+|**/randomitem simplychance <10|20|30|40|50|60|70|80|90|100>**| — set the Simply Swords weapon chance.
+|**/randomitem stop and /randomitem start**| — stop or resume item drops.
+|**/randomitem text <label>**| — customize the timer label. Use %time% for the remaining seconds.
+|**/randomitem color <color>**| — change the boss-bar color.
+|**/randomitem textcolor <color>**| — change the timer and chat text color.
+|**/randomitem announce <true|false>**| — show or hide the item announcement in chat.
+|**/randomitem status**| — show the current settings.
 
 *Commands may vary depending on the installed release.*
 
