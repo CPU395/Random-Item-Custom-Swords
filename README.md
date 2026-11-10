@@ -42,6 +42,7 @@ The randomizer only selects items that are registered by the mods loaded in the 
 1. Install Fabric Loader for Minecraft 26.3 and the required Fabric API.
 2. Put this mod JAR and any compatible content mods in the same profile's `mods` folder.
 3. Keep only one copy of each mod in that folder, then launch the Fabric 26.3 profile.
+4. When you open the zip file then make sure to choose random-item-mod-2.0.0-26.3.jar jar file
 
 ## Build from source
 
